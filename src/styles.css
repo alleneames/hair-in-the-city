@@ -1,0 +1,20 @@
+.custom-nav {
+    background-color: black;
+    opacity: .9;
+    
+}
+
+.nav-image img{
+   opacity: 1;
+}
+
+.custom-links a:hover {
+    color: white;
+}
+
+.bk-image {
+    background-image: url("images/aura_backdrop.jpg");
+    background-position: center;
+    background-size: cover; 
+    height: 100vh
+}
