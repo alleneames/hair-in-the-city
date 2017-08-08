@@ -1,17 +1,19 @@
 import React from "react";
 
+import { Link } from "react-router-dom";
+
 
 class Navbar extends React.Component {
     render() {
         return (
             <div>
-                <nav className="navbar is-transparent custom-nav ">
+                <nav className="navbar is-transparent custom-nav">
                     <div className="navbar-brand">
                         <div className="navbar-item nav-image"  href="http://google.com">
-                            <img src="images/aura.png" alt="Aura Hair Studio" />
+                            <img src="images/aura.png" alt="Aura Hair Studio" href= />
                         </div>
 
-                        <div className="navbar-burger burger" data-target="navMenuTest">
+                        <div className="navbar-burger burger is-transparent" data-target="navMenuTest">
                             <span></span>
                             <span></span>
                             <span></span>
@@ -20,13 +22,11 @@ class Navbar extends React.Component {
                     <div id="navMenuTest" className="navbar-menu custom-links">
                         <div className="navbar-end">
                             <div className="navbar-item">
-                                <a className="navbar-item" href="www.google.com">
-                                    Book Now
-                                </a>
-                                <a className="navbar-item" href="www.facebook.com">
+                                <Link className="navbar-item" to="/booknow">Book Now</Link>
+                                <a className="navbar-item" href="#prices">
                                     Prices
                                 </a>
-                                <a className="navbar-item" href="www.twitter.com">
+                                <a className="navbar-item" href="#bio">
                                     Bio
                                 </a>
                             </div>

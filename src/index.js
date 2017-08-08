@@ -1,41 +1,45 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import moment from 'moment';
 
-import BigCalendar from 'react-big-calendar';
-import { getEvents } from './actions/index.js';
-import 'react-big-calendar/lib/css/react-big-calendar.css';
+import { Route, BrowserRouter, Switch } from "react-router-dom";
+
+import { createStore, applyMiddleware } from 'redux';
+
+import { Provider } from 'react-redux';
+
+import reducers from './reducers/';
+
+import thunk from 'redux-thunk';
 
 import Navbar from './components/navbar_hitc.js';
-import AuraMain from './components/main_hitc.js';
+import PricesListContainer from './containers/prices_list_container.js';
+import AdminFormContainer from './containers/admin_form_container.js';
+import Calendar from './components/calendar_hitc.js';
+
 import './styles.css'
 
-BigCalendar.setLocalizer(
-  BigCalendar.momentLocalizer(moment)
-);
+const store = createStore(reducers, applyMiddleware(thunk));
+
 
 class App extends React.Component {
-    constructor() {
-        super();
-        this.state = {
-            events: []
-        }
-    }
-    componentDidMount() {
-        getEvents((events)=> {
-            this.setState({events})
-        })
-    }
     render() {
         return (
             <div>
-                <BigCalendar
-                    style={{height: '450px', width: '100%'}}
-                    events={this.state.events} />
+                <BrowserRouter>
+                <div>
+                    <Navbar />
+                    <Switch>
+                        <Route exact path="/" component={PricesListContainer} />
+                        <Route exact path = "/booknow" component={Calendar} />
+                    </Switch>
+                    </div>
+                </BrowserRouter>
+                
+                
                 
             </div>
         )
     }
 }
 
-ReactDOM.render(<App />, document.querySelector('#root'));
+ReactDOM.render(<Provider store={store}><App /></Provider>, document.querySelector('#root'));
