@@ -68,6 +68,33 @@
       
     }
 
+.bk-third-image {
+        background-image: url("images/aura_backdrop.jpg");
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+        height: 100vh;
+}
+.bk-third-image h4 {
+        color: white;
+    }
+
+.prices {
+        text-align: center;
+    }
+.prices .title {
+        font-family: 'Tangerine', cursive;
+        color: #E8941F;
+        font-size: 3em; 
+    }
+.prices .price {
+        font-family: 'Tangerine', cursive;
+        color: #E8941F;;
+        margin-top: -30px;
+        font-size: 3em;
+        
+    }
+
 
 
 @media screen and (min-width : 900px) {
@@ -145,5 +172,45 @@
         background-attachment: fixed;
         height: 100vh;
     }
+    .bk-third-image h4 {
+        color: white;
+    }
+    .prices {
+        text-align: center;
+    }
+    .prices .title {
+        font-family: 'Tangerine', cursive;
+        color: #E8941F;
+        font-size: 3em; 
+    }
+    .prices .price {
+        font-family: 'Tangerine', cursive;
+        color: #E8941F;;
+        margin-top: -30px;
+        font-size: 3em;
+        
+    }
+    .bm-burger-button {
+        position: fixed;
+        width: 30px;
+        height: 20px;
+        left: 36px;
+        top: 36px;
+}
+    .bm-burger-bars {
+        background: white;
+}
+    .bm-menu {
+        background: #373a47;
+        padding: 2.5em 1.5em 0;
+        font-size: 1.15em;
+}
+    .bm-item-list {
+        color: #b8b7ad;
+        padding: 0.8em;
+}
+    .bm-overlay {
+        background: rgba(0, 0, 0, 0.3);
+}
 }
 

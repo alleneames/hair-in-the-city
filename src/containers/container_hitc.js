@@ -19,7 +19,8 @@ class AuraContainer extends React.Component {
     }
     render() {
         return (
-            <AuraMain 
+            <AuraMain
+                index={this.props.index}
                 service={this.props.service}
                 input={this.state}
                 handleChange={this.props.handleChange}

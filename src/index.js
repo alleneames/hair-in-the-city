@@ -15,6 +15,8 @@ import Navbar from './components/navbar_hitc.js';
 import PricesListContainer from './containers/prices_list_container.js';
 import AdminFormContainer from './containers/admin_form_container.js';
 import Calendar from './components/calendar_hitc.js';
+import NavNew from './components/navbar_new.js';
+
 
 import './styles.css'
 
@@ -27,7 +29,7 @@ class App extends React.Component {
             <div>
                 <BrowserRouter>
                 <div>
-                    <Navbar />
+                 <Navbar />   
                     <Switch>
                         <Route exact path="/" component={PricesListContainer} />
                         <Route exact path = "/booknow" component={Calendar} />
