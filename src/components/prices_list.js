@@ -14,9 +14,12 @@ class PricesList extends React.Component {
     }
     render() {
         return(
-            <div className="columns">
-                {this.genPrices()}
-            </div>
+                <div className="row bk-third-image">
+                    {this.genPrices()}
+                    </div>
+
+
+          
 
         )
     }

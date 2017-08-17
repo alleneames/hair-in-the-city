@@ -21,7 +21,7 @@ class PricesListContainer extends React.Component {
     render() {
         return(
             <div>
-                <div className="container-fluid">
+                <div>
                      <div id="main-ref">
                         <div className="columns is-mobile is-centered bk-main-image">
                             <div className="column is-half">
@@ -51,7 +51,7 @@ class PricesListContainer extends React.Component {
                                 </div>
                             </div>
                         </div>
-                        <div className="bk-third-image">
+                        <div>
                                     <PricesList
                                     prices={this.props.prices}
                                     handleRemove={this.props.deleteData}

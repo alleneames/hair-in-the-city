@@ -9,7 +9,7 @@ class Navbar extends React.Component {
             <div>
                 <nav className="navbar is-transparent custom-nav">
                     <div className="navbar-brand">
-                        <div className="navbar-item nav-image"  href="http://google.com">
+                        <div className="navbar-item nav-image"  >
                             <Link to="/"><img src="images/aura.png" alt="Aura Hair Studio" /></Link>
                         </div>
 

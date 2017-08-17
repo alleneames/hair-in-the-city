@@ -5,16 +5,9 @@ import Calendar from "./calendar_hitc.js";
 
 class AuraMain extends React.Component {
     render() {
-        if(this.props.index === 0) {
-       return (
-                <div className="column is-one-third prices"> 
-                    <h4 className="title">{this.props.service.title} </h4>
-                    <h2 className="price">${this.props.service.price} </h2>
-                </div>    
-        )
-        } else {
+
                    return (
-                <div className="column is-one-third prices"> 
+                <div className="col-md-4 prices"> 
                     <h4 className="title">{this.props.service.title} </h4>
                     <h2 className="price">${this.props.service.price}</h2>
                 </div>    
@@ -22,6 +15,6 @@ class AuraMain extends React.Component {
         }
  
     }
-}
+
 
 export default AuraMain;
