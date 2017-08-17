@@ -3,7 +3,7 @@ import autoBind from "react-autobind"
 
 import { connect } from "react-redux";
 import { bindActionCreators } from 'redux';
-import * as actionCreators from '../actions/';
+import * as actionCreators from '../actions/index.js';
 
 import PricesList from '../components/prices_list.js';
 
