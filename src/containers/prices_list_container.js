@@ -21,7 +21,7 @@ class PricesListContainer extends React.Component {
     render() {
         return(
             <div>
-                <div>
+                <div className="container-fluid">
                      <div id="main-ref">
                         <div className="columns is-mobile is-centered bk-main-image">
                             <div className="column is-half">

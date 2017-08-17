@@ -25,6 +25,7 @@ class Calendar extends React.Component {
     render() {
         return (
             <div>
+                <h2 className="book">Book Now: 801-739-1959</h2>
                 <BigCalendar
                     style={{height: '450px', width: '100%'}}
                     events={this.state.events} />
